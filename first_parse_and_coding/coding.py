@@ -68,7 +68,7 @@ def encoder(file_path: str):
 file_path = input(
     "Введите путь до файла или его имя, если он находится в этой же папке:\n"
 )
-result = coder(file_path)
+result = encoder(file_path)
 with open("result.txt", "w", encoding="UTF-8") as file:
     file.write(result + "\n")
 for token in coding:
