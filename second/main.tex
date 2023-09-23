@@ -76,16 +76,21 @@
               \begin{enumerate}
                   \item $T_3 = T_2 \cup \{abaa, aSSa, aaSS, aSaS\}$
                   \item $T_4 = T_3 \cup\{aaSa, aSaa, aaaS\}$
-                  \item \begin{gather*}
-                            T_5 = T_4 \cup \{aaaa\}
-                        \end{gather*}
+                  \item $T_5 = T_4 \cup \{aaaa\}$
                   \item $T_6 = T_5$
               \end{enumerate}
               алгоритм закончен, в множестве $T_5$ не нашлось слова $abbb$, значит слово не принадлежит языку, порождаемому грамматикой $G$
         \item $baaba$, для него $|baaba| = 5$:
-        \begin{enumerate}
-            \item $T_0 = \{S\}$
-        \end{enumerate}
+              \begin{enumerate}
+                  \item $T_0 = \{S\}$
+                  \item $T_1 = T_0 \cup \{aAS, a\}$
+                  \item $T_2 = T_1 \cup \{aSbaS, abaS, aSSS, aAaAS\}$
+                  \item $T_3 = T_2 \cup \{aabaS, aSbaa, aaSS, aSaS, aSSa, aAaAa\}$
+                  \item $T_4 = T_3 \cup \{aabaa, aaaS, aaSa, aSaa\}$
+                  \item $T_5 = T_4 \cup \{aaaa\}$
+                  \item $T_6 = T_5$
+              \end{enumerate}
+              алгоритм закончил свою работу, так как $baaba \notin T_5$ слово не принадлежит языку, порождаемому грамматикой $G$
     \end{enumerate}
 
 \end{solution}
