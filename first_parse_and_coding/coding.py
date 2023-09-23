@@ -20,7 +20,7 @@ def parse_tokens(text: str) -> [str]:
     tail = ""
     for i in range(len(text)):
         char = text[i]
-        if not char in separators:
+        if char not in separators:
             tail += char
         else:
             if tail == "":

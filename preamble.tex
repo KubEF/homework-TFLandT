@@ -1,0 +1,29 @@
+%%% Fonts and language setup.
+\usepackage{polyglossia}
+% Setup fonts.
+\usepackage{fontspec}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{fontspec}
+
+\newfontface\lserif{Liberation Serif}
+
+\newcommand{\Csh}{C{\lserif\#}}
+\setmainfont{CMU Serif}
+\setsansfont{CMU Sans Serif}
+\setmonofont{CMU Typewriter Text}
+
+\NewDocumentEnvironment{solution}{mmm +b}{
+    \textbf{ДАНО:} #1
+
+    \textbf{НАЙТИ:} #2
+
+    \textbf{МЕТОД РЕШЕНИЯ:} #3
+
+    \textbf{РЕШЕНИЕ:} #4
+}{}
+
+\newcommand{\romannumeralCaps}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+
+\setdefaultlanguage{russian}
+\setotherlanguage{english}
