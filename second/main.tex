@@ -32,11 +32,11 @@
               \begin{enumerate}
                   \item Можно сразу пойти в $0$
                   \item Можно пойти в $0A$, тогда самый короткий способ закончить слово: $S \to 0A \to 00S \to 000$. Так что 2 нулей быть не может, только $1, 3$ или больше.
-                  \item Или можно продолжать любое количество $0$, тогда слово будет иметь вид $0^k$, где $k \in \{1, 3, 4,\dots ,n\}$
+                  \item Или можно продолжать любое количество $0$, тогда слово будет иметь вид $0^k$, где $k \in \mathbb{N} \setminus \{2\}$
               \end{enumerate}
     \end{enumerate}
     Подводя итог, язык, порождающийся грамматикой имеет вид
-    $\{0^k\} \cup \{0^*1^+0^b\}$, где $b \in \{0,1\}, k\in \{1,3,4, \dots , n\}$
+    $\{0^k\} \cup \{0^*1^+0^b\}$, где $b \in \{0,1\}, k\in \mathbb{N} \setminus \{2\}$
 \end{solution}
 \section*{Упражнение \romannumeralCaps 1-2.2}
 \begin{solution}
@@ -84,14 +84,22 @@
               \begin{enumerate}
                   \item $T_0 = \{S\}$
                   \item $T_1 = T_0 \cup \{aAS, a\}$
-                  \item $T_2 = T_1 \cup \{aSbaS, abaS, aSSS, aAaAS\}$
-                  \item $T_3 = T_2 \cup \{aabaS, aSbaa, aaSS, aSaS, aSSa, aAaAa\}$
-                  \item $T_4 = T_3 \cup \{aabaa, aaaS, aaSa, aSaa\}$
+                  \item $T_2 = T_1 \cup \{aSbAS, abaS, aSSS, aAaAS, aAa\}$
+                  \item $T_3 = T_2 \cup \{aabAS, aSbAa, aaSS, aSaS, aSSa, aAaAa, abaa\}$
+                  \item $T_4 = T_3 \cup \{aabAa, aaaS, aaSa, aSaa\}$
                   \item $T_5 = T_4 \cup \{aaaa\}$
                   \item $T_6 = T_5$
               \end{enumerate}
               алгоритм закончил свою работу, так как $baaba \notin T_5$ слово не принадлежит языку, порождаемому грамматикой $G$
     \end{enumerate}
+
+\end{solution}
+
+\section*{Упражнение \romannumeralCaps 1-2.5}
+\begin{solution}
+    {Контекстно-свободная или регулярная грамматика $G$, теорема $2.2$.}
+    {Ответ  на вопрос, можно ли улучшить оценку для $m$.}
+    {}
 
 \end{solution}
 \end{document}
