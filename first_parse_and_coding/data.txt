@@ -1,4 +1,4 @@
-expression : ( formula )*( ,' ) .
+expression : ( formula )*( ',' ) .
 formula : ( *( $opcode1 '<operation>' ) operand $operand )*(
       ( $opcode2 '<assignation>' ; $opcode2 '<operation>' ) ) .
 operand : ( (  $incr1 '<increment>' $tag '<tag>' ;
